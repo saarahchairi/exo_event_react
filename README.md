@@ -12,4 +12,4 @@ Exo3 : Au copie de la valeur de l'input, une alert apparaît avec c
 
 Exo4 : Au focus de l'input, son bg-color devient vert et à l'inverse, au dé focus, il redevient normal
 
-Exo5 : Au clique du btn, une alert apparaît
+Exo5 : Au clique du btn, une alert apparaît# exo_event_react
