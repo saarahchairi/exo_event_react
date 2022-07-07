@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import Exo1 from "./Components/Exo_1";
+import Exo2 from "./Components/Exo_2";
+import Exo3 from "./Components/Exo_3";
+import Exo4 from "./Components/Exo_4";
+import Exo5 from "./Components/Exo_5";
 
-function App() {
+export default function App() {
+  let [chiffre, setChiffre] = useState(0);
+  let [text, setText] = useState("Ce texte est modifiable");
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Exo1 monChiffre={chiffre} setChiffre={setChiffre} />
+      <Exo2 text={text} setText={setText}/>
+      <Exo3 />
+      <Exo4 />
+      <Exo5 />
     </div>
-  );
+  )
 }
-
-export default App;
